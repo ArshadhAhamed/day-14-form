@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form and Table</title>
+
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+    <h1 id="title">Form and Table Submission</h1>
+    <p id="description">Please fill out the form below and submit. The details will be displayed in the table below.</p>
+    
+    <form id="form">
+        <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="firstName" placeholder="Enter your first name" required>
+        </div>
+        <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="lastName" placeholder="Enter your last name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" placeholder="Enter your pincode" required>
+        </div>
+        <div class="form-group">
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+        </div>
+        <div class="form-group">
+            <label>Choice of Food (choose at least 2):</label><br>
+            <input type="checkbox" id="food1" name="food" value="Pizza"> Pizza
+            <input type="checkbox" id="food2" name="food" value="Burger"> Burger
+            <input type="checkbox" id="food3" name="food" value="Pasta"> Pasta
+            <input type="checkbox" id="food4" name="food" value="Salad"> Salad
+            <input type="checkbox" id="food5" name="food" value="Sushi"> Sushi
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+        </div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+    </form>
+    
+    <div class="table-responsive">
+        <table id="dataTable" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="buttons" class="d-flex justify-content-center">
+        <button id="first" class="btn">First</button>
+        <button id="previous" class="btn">Previous</button>
+        <button id="next" class="btn">Next</button>
+        <button id="last" class="btn">Last</button>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
